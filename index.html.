@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KA Management | Venta VIP 24/7</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #020617;
+            --accent-blue: #38bdf8;
+            --accent-purple: #8b5cf6;
+            --whatsapp-green: #22c55e;
+            --card-bg: rgba(30, 41, 59, 0.7);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at top right, #1e1b4b, #020617);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .logo {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -1px;
+            background: linear-gradient(to right, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+        }
+
+        .hero-text {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            max-width: 320px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 450px;
+            padding-bottom: 60px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 30px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(12px);
+            text-align: center;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .price {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin: 15px 0;
+            color: var(--accent-blue);
+        }
+
+        .price small {
+            font-size: 1rem;
+            color: #94a3b8;
+        }
+
+        .features {
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            margin-bottom: 25px;
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .features li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .features li::before {
+            content: "✓";
+            color: var(--accent-blue);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .btn-wa {
+            display: block;
+            background: var(--whatsapp-green);
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-wa:active {
+            transform: scale(0.98);
+        }
+
+        footer {
+            font-size: 0.75rem;
+            color: #475569;
+            margin-top: auto;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">KA Management</div>
+        <p class="hero-text">Soluciones Digitales 24/7. Tu negocio siempre abierto, siempre vendiendo.</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Pack Venta VIP</h2>
+            <div class="price">$1,200 <small>MXN</small></div>
+            <ul class="features">
+                <li>Imagen con QR Inteligente</li>
+                <li>Página de Destino (1 Mes)</li>
+                <li>Botón Directo a WhatsApp</li>
+            </ul>
+            <a href="https://wa.me/526865789002?text=Hola%20KA%20Management,%20me%20interesa%20contratar%20el%20Pack%20Venta%20VIP%20de%20$1,200" class="btn-wa">Lo quiero ahora</a>
+        </div>
+
+        <div class="card">
+            <h2>Pack Esencial</h2>
+            <div class="price">$1,800 <small>MXN</small></div>
+            <ul class="features">
+                <li>Diseño de Identidad Visual</li>
+                <li>Catálogo Digital Interactivo</li>
+                <li>Soporte Técnico Básico</li>
+            </ul>
+            <a href="https://wa.me/526865789002?text=Hola%20KA%20Management,%20me%20interesa%20el%20Pack%20Esencial%20de%20$1,800" class="btn-wa">Más información</a>
+        </div>
+
+        <div class="card">
+            <h2>Pack PRO Gestión</h2>
+            <div class="price">$4,500 <small>MXN</small></div>
+            <ul class="features">
+                <li>Gestión de Redes Sociales</li>
+                <li>Estrategia de Contenidos</li>
+                <li>Pauta Publicitaria e Informes</li>
+            </ul>
+            <a href="https://wa.me/526865789002?text=Hola%20KA%20Management,%20quiero%20cotizar%20el%20Pack%20PRO%20Gestión%20de%20$4,500" class="btn-wa">Contactar asesor</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 KA Management<br>
+        Hecho para emprendedores VIP
+    </footer>
+
+</body>
+</html>
