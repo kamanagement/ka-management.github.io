@@ -1,178 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KA Management | Venta VIP 24/7</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-dark: #020617;
-            --accent-blue: #38bdf8;
-            --accent-purple: #8b5cf6;
-            --whatsapp-green: #22c55e;
-            --card-bg: rgba(30, 41, 59, 0.7);
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KA Management</title>
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            background: radial-gradient(circle at top right, #1e1b4b, #020617);
-            color: white;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #0f172a, #1e3a8a, #6d28d9);
+        color: white;
+        text-align: center;
+    }
 
-        header {
-            text-align: center;
-            padding: 50px 20px;
-        }
+    .container {
+        padding: 20px;
+        max-width: 500px;
+        margin: auto;
+    }
 
-        .logo {
-            font-size: 2.2rem;
-            font-weight: 600;
-            letter-spacing: -1px;
-            background: linear-gradient(to right, var(--accent-blue), var(--accent-purple));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 5px;
-        }
+    h1 {
+        margin-bottom: 10px;
+    }
 
-        .hero-text {
-            font-size: 0.95rem;
-            color: #94a3b8;
-            max-width: 320px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
+    p {
+        opacity: 0.8;
+    }
 
-        .container {
-            width: 90%;
-            max-width: 450px;
-            padding-bottom: 60px;
-        }
+    .card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 20px;
+        margin: 20px 0;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        transition: transform 0.3s;
+    }
 
-        .card {
-            background: var(--card-bg);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 24px;
-            padding: 30px;
-            margin-bottom: 25px;
-            backdrop-filter: blur(12px);
-            text-align: center;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
-        }
+    .card:hover {
+        transform: scale(1.03);
+    }
 
-        .card h2 {
-            margin: 0;
-            font-size: 1.5rem;
-            color: white;
-        }
+    .price {
+        font-size: 24px;
+        margin: 10px 0;
+        font-weight: bold;
+    }
 
-        .price {
-            font-size: 2.2rem;
-            font-weight: 600;
-            margin: 15px 0;
-            color: var(--accent-blue);
-        }
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
 
-        .price small {
-            font-size: 1rem;
-            color: #94a3b8;
-        }
+    ul li {
+        margin: 8px 0;
+    }
 
-        .features {
-            font-size: 0.9rem;
-            color: #cbd5e1;
-            margin-bottom: 25px;
-            list-style: none;
-            padding: 0;
-            text-align: left;
-        }
+    .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 12px 20px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #22c55e, #16a34a);
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
 
-        .features li {
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-        }
+    .btn:hover {
+        opacity: 0.8;
+    }
 
-        .features li::before {
-            content: "✓ ";
-            color: var(--accent-blue);
-            font-weight: bold;
-            margin-right: 10px;
-        }
+    .vip { border: 1px solid #38bdf8; }
+    .esencial { border: 1px solid #a78bfa; }
+    .pro { border: 1px solid #facc15; }
 
-        .btn-wa {
-            display: block;
-            background: var(--whatsapp-green);
-            color: white;
-            text-decoration: none;
-            padding: 15px;
-            border-radius: 16px;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: transform 0.2s;
-        }
-
-        footer {
-            font-size: 0.75rem;
-            color: #475569;
-            margin-top: auto;
-            padding-bottom: 30px;
-            text-align: center;
-        }
-    </style>
+</style>
 </head>
+
 <body>
 
-    <header>
-        <div class="logo">KA Management</div>
-        <p class="hero-text">Soluciones Digitales 24/7. Tu negocio siempre abierto, siempre vendiendo.</p>
-    </header>
+<div class="container">
+    <h1>KA Management</h1>
+    <p>Elige el plan perfecto para ti 🚀</p>
 
-    <div class="container">
-        <div class="card">
-            <h2>Pack Venta VIP</h2>
-            <div class="price">$1,200 <small>MXN</small></div>
-            <ul class="features">
-                <li>Imagen con QR Inteligente</li>
-                <li>Página de Destino (1 Mes)</li>
-                <li>Botón Directo a WhatsApp</li>
-            </ul>
-            <a href="https://wa.me/526865789002?text=Hola%20KA%20Management,%20me%20interesa%20el%20Pack%20VIP" class="btn-wa">Lo quiero ahora</a>
-        </div>
-
-        <div class="card">
-            <h2>Pack Esencial</h2>
-            <div class="price">$1,800 <small>MXN</small></div>
-            <ul class="features">
-                <li>Diseño de Identidad Visual</li>
-                <li>Catálogo Digital Interactivo</li>
-                <li>Soporte Técnico Básico</li>
-            </ul>
-            <a href="https://wa.me/526865789002?text=Hola%20KA%20Management,%20me%20interesa%20el%20Pack%20Esencial" class="btn-wa">Más información</a>
-        </div>
-
-        <div class="card">
-            <h2>Pack PRO Gestión</h2>
-            <div class="price">$4,500 <small>MXN</small></div>
-            <ul class="features">
-                <li>Gestión de Redes Sociales</li>
-                <li>Estrategia de Contenidos</li>
-                <li>Pauta Publicitaria e Informes</li>
-            </ul>
-            <a href="https://wa.me/526865789002?text=Hola%20KA%20Management,%20quiero%20el%20Pack%20PRO" class="btn-wa">Contactar asesor</a>
-        </div>
+    <!-- PACK VIP -->
+    <div class="card vip">
+        <h2>Pack VIP</h2>
+        <div class="price">$1,200</div>
+        <ul>
+            <li>✓ Servicio básico optimizado</li>
+            <li>✓ Atención personalizada</li>
+            <li>✓ Entrega rápida</li>
+        </ul>
+        <a class="btn" href="https://wa.me/521XXXXXXXXXX?text=Hola%2C%20me%20interesa%20el%20Pack%20VIP">
+            Lo quiero ahora
+        </a>
     </div>
 
-    <footer>
-        &copy; 2026 KA Management<br>
-        Hecho para emprendedores VIP
-    </footer>
+    <!-- PACK ESENCIAL -->
+    <div class="card esencial">
+        <h2>Pack Esencial</h2>
+        <div class="price">$1,800</div>
+        <ul>
+            <li>✓ Todo lo del VIP</li>
+            <li>✓ Mejores resultados</li>
+            <li>✓ Soporte prioritario</li>
+        </ul>
+        <a class="btn" href="https://wa.me/521XXXXXXXXXX?text=Hola%2C%20me%20interesa%20el%20Pack%20Esencial">
+            Lo quiero ahora
+        </a>
+    </div>
+
+    <!-- PACK PRO -->
+    <div class="card pro">
+        <h2>Pack PRO</h2>
+        <div class="price">$4,500</div>
+        <ul>
+            <li>✓ Servicio premium completo</li>
+            <li>✓ Máxima optimización</li>
+            <li>✓ Resultados avanzados</li>
+        </ul>
+        <a class="btn" href="https://wa.me/521XXXXXXXXXX?text=Hola%2C%20me%20interesa%20el%20Pack%20PRO">
+            Lo quiero ahora
+        </a>
+    </div>
+
+</div>
 
 </body>
 </html>
